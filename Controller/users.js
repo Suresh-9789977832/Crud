@@ -94,8 +94,8 @@ const editusers = async (req,res) => {
 
         if (user) {
             
-        user.firstName = firstName
-        user.lastName = lastName
+        user.firstname = firstName
+        user.lastname = lastName
         user.batch = batch
         user.email = email
             await user.save()
